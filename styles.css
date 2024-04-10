@@ -1,0 +1,43 @@
+.track {
+    width: 100%;
+    cursor: pointer;
+}
+
+.track h5 {
+    margin-left: 10px;
+    color: rgb(206, 206, 206)
+}
+
+.track label{
+    color: rgb(143, 0, 0);
+}
+
+.track:hover {
+    background-color: rgb(74, 74, 74);
+}
+
+.divisor {
+    height: 2px;
+    width: 100%;
+    background-color: rgb(74, 74, 74);
+}
+
+.volume {
+    width: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease, width 0.5s ease;
+    
+}
+
+.volume::-webkit-slider-thumb {
+    background-color: rgb(223, 31, 31);
+}
+
+.volume::-webkit-slider-thumb:active {
+    background-color: rgb(224, 95, 95);
+}
+
+.volume-container:hover .volume {
+    width: 100%;
+    opacity: 1;
+}
